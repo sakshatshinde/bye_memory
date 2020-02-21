@@ -42,7 +42,7 @@ long long* flood = NULL;
 unsigned long long LIMIT =  ((unsigned long long) TOTAL_MEMORY * 0.3);
 
 int i = 0;
-while(i < (TOTAL_MEMORY * 0.3)){
+while(i < (TOTAL_MEMORY * 0.3)){	// This while condition is meaningless atm, always true
     //printf("Total memory: %llu", TOTAL_MEMORY);
     flood = malloc(sizeof(flood));
     i++;
