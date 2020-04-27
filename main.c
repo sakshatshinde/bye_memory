@@ -22,7 +22,6 @@
 			return physMemUsed;
         }
         
-		
 #define TOTAL_MEMORY getTotalSystemMemory()
 #define USED_MEMORY getUsedSystemMemory()
 
@@ -57,19 +56,17 @@ printf("Used memory : %llu", USED_MEMORY);
 
 
 // int i = 0;
-while(USED_MEMORY < LIMIT){	// This while condition is meaningless atm, always true
-    //printf("Total memory: %llu", TOTAL_MEMORY);
+while(USED_MEMORY < LIMIT){				// Loops till the USED_MEMORY == LIMIT 
     flood = malloc(sizeof(flood));
-//    i = i + sizeof(flood);
-    // sleep(1);
 }
 
 // If memeAlloc fails
 if (flood == NULL) {
-	printf("Couldn't allocate memory");
+	printf("\nCouldn't allocate memory");
 }
 
+// free the allocated memory
 free(flood);
-printf("Flooding Done!");
+printf("\nFlooding Done!");
 return 0;
 }
