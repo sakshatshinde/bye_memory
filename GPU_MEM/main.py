@@ -1,7 +1,6 @@
-
-
 # CURRENTLY THIS FILLS UP SYSTEM MEMORY AND NOT GPU_vRAM
-
+# Apparently you can't allocate memory on the GPU directly and by defauly system memory gets allocated
+# If anyone is able to figure out a way contributions are always welcome!
 
 import pyopencl as cl # OpenCL - GPU computing interface
 from pyopencl import device_info 
